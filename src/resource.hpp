@@ -12,6 +12,6 @@ class Resource {
     void Add(resource_type type, resource_t val);
 
     private:
-    resource_t capacities[RESOURCE_TYPE_AMOUNT];
-    resource_t type[RESOURCE_TYPE_AMOUNT];
+    resource_t capacities[RESOURCE_TYPE_AMT];
+    resource_t type[RESOURCE_TYPE_AMT];
 };

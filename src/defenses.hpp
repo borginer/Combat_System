@@ -7,12 +7,14 @@ struct Defenses {
     Defenses();
     // set defenses from stats
     Defenses(flat_defense_stats f_stats, percent_defense_stats p_stats);
+    // copy constructor
+    Defenses(Defenses& other);
     // get flat defense of specific type
-    flat_defense_t FlatDefense(damage_type type) const;
-    // get percent defense of specific type
-    percent_defense_t PercentDefense(damage_type type) const;
+    flat_defense_t GetFlatDefense(damage_type type) const;
     // set flat defense of specific type
     void SetFlatDefense(damage_type type, flat_defense_t val);
+    // get percent defense of specific type
+    percent_defense_t GetPercentDefense(damage_type type) const;
     // set percent defense of specific type
     void SetPercentDefense(damage_type type, percent_defense_t val);
 
